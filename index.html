@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <title>Sass Music Website</title>
+</head>
+<body>
+    <div class="main-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">Music</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                    <button class="my-btn" type="submit">Search</button>
+                </div>
+            </div>
+          </nav>
+    </div>
+    <section class="header-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12 mx-auto">
+                    <div class="header-text">
+                        <h2><span class="header-special-text">Music</span> For Eyeryone</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ullam dolorum quo suscipit eligendi sapiente odio quae cum deserunt unde consectetur autem cumque nisi eaque debitis, animi magni amet. Modi.</p>
+                    </div>
+                    <div class="btn">
+                        <a href="#" class="my-btn" onclick="playSong()"><span><i class='fas fa-play-circle'></i></span> Play Music</a>
+                        <audio src="song dil kahi ka.mp3" id="audio-song"></audio>
+                        <a href="#" class="my-btn" onclick="pauseSong()"><span><i class='fas fa-pause-circle'></i></span> Pause Music</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12 mx-auto">
+                    <figure class="image-content">
+                        <img src="./pic1.jpg" alt="image_music" class="img-thumbnail">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p class="text-capatalize text-center font-weight-bold">Music For Everyone &copy; 2020</p>
+    </footer>
+
+    <script>
+        var audioSong = document.getElementById("audio-song");
+        console.log(audioSong);
+
+        function playSong(){
+            audioSong.play();
+        }
+
+        function pauseSong(){
+            audioSong.pause();
+        }
+    </script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
