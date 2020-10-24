@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+.main-header {
+  width: 100%;
+  line-height: 50px;
+  background-color: #0a183d;
+  background-color: #923cb5;
+  background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);
+}
+
+.main-header .navbar .navbar-brand {
+  color: #ffffff;
+  font-size: 4rem;
+  -webkit-animation: music 1s infinite linear;
+          animation: music 1s infinite linear;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes music {
+  from {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  to {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+}
+
+@keyframes music {
+  from {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  to {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+}
+
+.main-header .navbar .navbar-nav, .main-header .navbar .nav-item, .main-header .navbar a {
+  color: #ffffff;
+  font-size: 2rem;
+  padding-left: 4rem;
+  text-transform: uppercase;
+}
+
+.main-header .my-btn {
+  font-size: 2rem;
+  padding: 0.1rem 2rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #b71540;
+  border: none;
+  -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  outline: none;
+}
+
+.main-header .navbar-brand:hover {
+  color: #b71540;
+}
+
+.main-header .navbar-nav, .main-header .nav-item, .main-header a:hover {
+  color: #b71540;
+}
+
+.main-header .my-btn:hover {
+  background-color: #ffffff;
+  color: #b71540;
+  -webkit-box-shadow: 0rem 1.5rem 2rem rgba(255, 255, 157, 0.4);
+          box-shadow: 0rem 1.5rem 2rem rgba(255, 255, 157, 0.4);
+  -webkit-transform: translateY(-0.7rem);
+          transform: translateY(-0.7rem);
+}
+
+.header-hero {
+  width: 100%;
+  height: 80vh;
+  background-color: #0a183d;
+  color: #ffffff;
+}
+
+.header-hero .header-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 160px;
+}
+
+.header-hero .header-text h2 {
+  font-size: 5rem;
+  margin-bottom: 3rem;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+}
+
+.header-hero .header-text h2 .header-special-text {
+  color: #b71540;
+}
+
+.header-hero .header-text p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.header-hero .my-btn {
+  font-size: 2rem;
+  padding: 0.1rem 2rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #b71540;
+  border: none;
+  -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  outline: none;
+  padding: 1rem 2rem;
+  text-decoration: none;
+}
+
+.header-hero .my-btn:hover {
+  background-color: #ffffff;
+  color: #b71540;
+  -webkit-box-shadow: 0rem 1.5rem 2rem rgba(255, 255, 157, 0.4);
+          box-shadow: 0rem 1.5rem 2rem rgba(255, 255, 157, 0.4);
+  -webkit-transform: translateY(-0.7rem);
+          transform: translateY(-0.7rem);
+}
+
+.header-hero .image-content {
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header-hero .image-content img {
+  -webkit-animation: updownImage 10s infinite linear;
+          animation: updownImage 10s infinite linear;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes updownImage {
+  from {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes updownImage {
+  from {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+footer {
+  color: #ffffff;
+  font-size: 2rem;
+  padding: 1.07rem 5rem;
+  background-color: #923cb5;
+  background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);
+}
+/*# sourceMappingURL=main.css.map */

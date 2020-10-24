@@ -1,0 +1,135 @@
+@import "../scss/var";
+@import "../scss/mixin";
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+html{
+    font-size:62.5%;
+}
+
+a, a:hover{
+    text-decoration:none;
+}
+
+.main-header{
+    width:100%;
+    line-height:50px;
+    background-color:$main-color;
+    background-color: #923cb5;
+    background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);
+
+
+   & .navbar{
+        & .navbar-brand{
+            color:$text-color;
+            font-size:4rem;
+            animation: music 1s infinite linear;
+            animation-direction:alternate;
+    
+            @keyframes music{
+                from{
+                    transform:rotate(2deg);
+                }
+                to{
+                    transform:rotate(-2deg);
+                }
+            }
+        }
+
+        & .navbar-nav, .nav-item, a {
+            color:$text-color;
+            font-size:2rem;
+            padding-left:4rem;
+            text-transform:uppercase;
+        }
+    }
+
+    & .my-btn{
+        @include btn;
+    }
+
+    & .navbar-brand:hover{
+        color:$primary-color;
+    }
+    
+    & .navbar-nav, .nav-item, a:hover{
+        color:$primary-color;
+    }
+
+    & .my-btn:hover{
+        @include hovereffect;
+    }
+}
+
+.header-hero{
+    width:100%;
+    height:80vh;
+    background-color:$main-color;
+    color:$text-color;
+
+    & .header-text{
+        @include content_center;
+        margin-top:160px;
+
+        & h2{
+            font-size:5rem;
+            margin-bottom:3rem;
+            text-transform:capitalize;
+            letter-spacing:2px;
+            word-spacing:2px;
+
+            & .header-special-text{
+                color:$primary-color;
+            }
+        }
+
+        & p{
+            font-size:1.2rem;
+            margin-bottom:2rem;
+        }
+    }
+
+    & .my-btn{
+        @include btn;
+        padding:1rem 2rem;
+        text-decoration:none;
+    }
+
+    & .my-btn:hover{
+        @include hovereffect;
+    }
+
+    & .image-content{
+        height:70vh;
+        @include content_center;
+
+        & img{
+            animation: updownImage 10s infinite linear;
+            animation-direction:alternate;
+
+            @keyframes updownImage{
+                from{
+                    transform:scale(0.9);
+                }
+                to{
+                    transform:scale(1.0);
+                }
+            }
+        }
+    }
+}
+
+footer{
+    color:$text-color;
+    font-size:2rem;
+    padding:1.07rem 5rem;
+    background-color: #923cb5;
+    background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);
+}
